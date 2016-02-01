@@ -55,7 +55,6 @@
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-
           <% link_to "http://placehold.it/50x50", class: "navbar-brand" do %>
             <%= image_tag 'logo.jpg' %>
           <% end %>
@@ -64,7 +63,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <% link_to "/référenciers.html" do %>
+              <% link_to "/referenciers_list.html" do %>
                 <i class="fa fa-bars"></i>  Référenciers
               <% end %>
             </li>
@@ -100,7 +99,7 @@
     <!--                  Content of the page                                         -->
     <!-- ---------------------------------------------------------------------------  -->
 
-    <div class="main main-body-div">
+    <div class="main-div-body">
      <%= yield %>
     </div>
 
