@@ -5,21 +5,64 @@ title: Users management page
 <div class="index-main-info">
   <h2>Users management</h2>
   <div id="search-criteria">
-      <nav class="navbar navbar-default navbar-fixed-top navbar-wagon" role="navigation">
-        <div id="ref-search-referencier-param">
-
+    <div class="search-param">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="nationalCentral">National central</label>
+          <select class="form-control" id="nationalCentral">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
         </div>
-        <div>
-          <button class = "btn" type="button" name="button-search">Search</button>
-          <button class = "btn" type="button" name="button-erase">Erase</button>
+        <div class="form-group search-buttons">
+          <button class = "btn" type="submit" name="button-search">Search</button>
+          <button class = "btn" type="submi" name="button-erase">Erase</button>
         </div>
-      </nav>
-  </div>
-  <div id="referencier-details">
-
-    <div>
-      <button>Validation</button>
-      <button>Cancel</button>
+      </form>
     </div>
+  </div>
+  <div class="result-display" id="users-list">
+    <table class="table table-hover table-bordered">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>E-mail</th>
+        <th>Profil</th>
+        <th>Direction</th>
+        <th>Category</th>
+        <th>Country</th>
+        <th>Login</th>
+        <th>Password</th>
+      </tr>
+      <tr>
+        <td>Gustave</td>
+        <td>Leroux</td>
+        <td>Gustave.Leroux@lulu.com</td>
+        <td>Admin</td>
+        <td>DCN</td>
+        <td>All</td>
+        <td>All</td>
+        <td>gleroux</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Cyril</td>
+        <td>Leroux</td>
+        <td>Gustave.Leroux@lulu.com</td>
+        <td>Admin</td>
+        <td>DCN</td>
+        <td>All</td>
+        <td>All</td>
+        <td>gleroux</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="validation-buttons">
+    <button class = "btn" type="button" name="button-validation">Validation</button>
+    <button class = "btn" type="button" name="button-cancel">Cancel</button>
   </div>
 </div><!-- Div class="index-main-info"-->

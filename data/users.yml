@@ -1,0 +1,16 @@
+- fname: Gustave
+  lname: Leroux
+  email: Gustave.Leroux@lulu.com
+  profil: Admin
+  category: All
+  country: All
+  login: gleroux
+  password:
+- fname: Cyril
+  lname: Leroux
+  email: Cyril.Leroux@lulu.com
+  profil: Admin
+  category: All
+  country: All
+  login: cleroux
+  password:
