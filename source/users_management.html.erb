@@ -8,18 +8,16 @@ title: Users management page
     <div class="search-param">
       <form class="form-inline">
         <div class="form-group">
-          <label for="nationalCentral">National central</label>
-          <select class="form-control" id="nationalCentral">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+          <label for="category">Category</label>
+          <select class="form-control" id="category">
+            <% data.categories.each do |category| %>
+              <option>category.code category.label </option>
+            <% end %>
           </select>
         </div>
         <div class="form-group search-buttons">
           <button class = "btn" type="submit" name="button-search">Search</button>
-          <button class = "btn" type="submi" name="button-erase">Erase</button>
+          <button class = "btn" type="submit" name="button-erase">Erase</button>
         </div>
       </form>
     </div>
@@ -37,28 +35,29 @@ title: Users management page
         <th>Login</th>
         <th>Password</th>
       </tr>
-      <tr>
-        <td>Gustave</td>
-        <td>Leroux</td>
-        <td>Gustave.Leroux@lulu.com</td>
-        <td>Admin</td>
-        <td>DCN</td>
-        <td>All</td>
-        <td>All</td>
-        <td>gleroux</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Cyril</td>
-        <td>Leroux</td>
-        <td>Gustave.Leroux@lulu.com</td>
-        <td>Admin</td>
-        <td>DCN</td>
-        <td>All</td>
-        <td>All</td>
-        <td>gleroux</td>
-        <td></td>
-      </tr>
+      <% data.users.each do |user| %>
+        <tr>
+          <td>user.fname</td>
+          <td>user.lname</td>
+          <td>user.email/td>
+          <td>user.profil</td>
+          <td>user.category</td>
+          <td>user.country</td>
+          <td>user.login</td>
+          <td>user.password</td>
+          <td></td>
+          <tr>
+            <div>
+              <form action="">
+
+              </form>
+            </div>
+            <div>
+              
+            </div>
+          </tr>
+        </tr>
+      <% end %>
     </table>
   </div>
   <div class="validation-buttons">
